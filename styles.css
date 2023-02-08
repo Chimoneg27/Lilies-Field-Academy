@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --lawn-green: hsla(94, 87%, 48%, 1);
+    --heat-wave: hsla(29, 100%, 50%, 1);
+    --red-pigment: hsla(0, 90%, 54%, 1);
+    --azure: hsla(211, 100%, 50%, 1);
+    --white: hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 0%);
+}
+
+body{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: "Outfit";
+}
+
+#header{
+    font-weight: 400;
+    width: 90%;
+    height: 3.25rem;
+    margin: 2rem auto;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--heat-wave);
+    z-index: 1;
+}
+
+#header ul{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    list-style: none;
+    gap: 1rem;
+}
+
+a{
+    color: inherit;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+#header li:hover{
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+#bg-image div{
+    width: 100%;
+    height: 100vh;
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-image: url(images/image1.jpg);
+    position: relative;
+}
+
+#features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    height: 300px;
+    padding: 2rem;
+    width: 90%;
+    margin: 15px auto;
+    position: relative;
+}
+
+#features h2{
+    text-align: left;
+    margin: 1rem 0 0.25rem 1rem;
+}
+
+#features p{
+    text-align: left;
+    margin-top: 0.5rem;
+    padding: 5px;
+    font-size: 1.25rem;
+}
+
+.offers{
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+}
+
+.offers:first-child{
+    background-color: var(--lawn-green);
+}
+
+.offers:nth-child(2){
+    background-color: var(--red-pigment);
+}
+
+.offers:nth-child(3){
+    background-color: var(--azure);
+}
+
+.border{
+    width: 200px;
+    background-color:var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.fa-solid{
+    /* margin: 1.45rem 0rem 1rem 0.5rem; */
+    margin-top: 1.45rem;
+    margin-left: 0.15rem;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+#short-desc{
+    background-color: var(--black);
+    background-image: url(images/image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: var(--white);
+    padding: 8px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#short-desc p{
+    padding: 10px;
+    width: 714.922px;
+    font-size: 1.5rem;  
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+#short-desc h2{
+    font-size: 2.5rem;
+}
+
+#academy-footer{
+    height: 350px;
+    background-color: var(--azure);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#details{
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 8px 8px 8px;
+    margin-top: 25px;
+}
+
+#details ul{
+    list-style: none;
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.Socials ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor:pointer;
+}
+
+.email-phone ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor:pointer;
+}
+
+.extras ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.fa-brands:hover{
+    color: var(--white);
+}
