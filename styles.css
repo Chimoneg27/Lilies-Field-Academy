@@ -32,7 +32,7 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     border-radius: 10px;
-    background-color: var(--heat-wave);
+    background-color: var(--white);
     z-index: 1;
 }
 
@@ -57,12 +57,12 @@ a{
 }
 
 #bg-image div{
-    width: 100%;
-    height: 100vh;
-    margin-top: -8rem;
-    margin-bottom: 2rem;
-    background-size: cover;
-    background-image: url(images/image1.jpg);
+    width: 96.85%;
+    height: 95.75vh;
+    margin: 1rem auto;
+    background-repeat: repeat;
+    background-size: 100px 100px; 
+    background-image: url(images/johnny_automatic_crocus_flower_top_view.svg);
     position: relative;
 }
 
@@ -131,7 +131,6 @@ a{
     height: 500px;
     color: var(--white);
     padding: 8px;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,4 +201,111 @@ a{
 
 .fa-brands:hover{
     color: var(--white);
+}
+
+@media (max-width: 480px){
+    body{
+        width: auto;
+    }
+
+    #header{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        background-color: var(--white);
+    }
+
+    #header ul{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+    }
+
+    #features{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        height: 715px;
+        padding: 2rem;
+        width: 90%;
+        margin: 15px auto;
+        position: relative;
+    }
+
+    #bg-image div{
+        width: 88.5%;
+        height: 94.5vh;
+        margin: 1rem auto;
+    }
+    
+    #short-desc{
+        background-image: url(images/image1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 95%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    #short-desc p{
+        width: inherit;
+        font-size: 1rem;  
+        text-align: center; 
+        margin-top: 1rem;
+    }
+    
+    #short-desc h2{
+        font-size: 1.5rem;
+    }
+
+    #features h2{
+        text-align: left;
+        margin: 1rem 0 0.25rem 0.25;
+    }
+    
+    #features p{
+        text-align: left;
+        margin-top: 0.5rem;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .offers{
+        border-radius: 10px;
+        position: relative;
+        padding: 2px;
+    }
+
+    #academy-footer{
+        height: 750px;
+        background-color: var(--azure);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    #details{
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat();
+        padding: 15px 8px 8px 8px;
+        margin-top: 25px;
+    }
+    
+    #details ul{
+        list-style: none;
+    }
+
+    #logo{
+        width: 100px;
+        margin: 0 auto;
+    }
+    
+    #logo img{
+        width: 100px;
+        height: 100px;
+    }    
 }
